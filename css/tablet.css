@@ -5,6 +5,21 @@
   margin: 0 auto;
   padding: 0 16px;
 }
+.link-hover,
+.customers-link {
+  transition: color var(--animation-slow);
+}
+.primary-btn:hover,
+.primary-btn:focus,
+.team-social-link:hover,
+.team-social-link:focus,
+.footer-submit-btn:hover,
+.footer-submit-btn:focus,
+.modal-secondary-btn:hover,
+.modal-secondary-btn:focus {
+  background-color: var(--color-dark-blue);
+}
+
 /* ===============================/COMMON STYLES============================== */
 /* =====================================HEADER================================ */
 
@@ -38,6 +53,11 @@
   background-color: var(--color-dark-blue);
   border-radius: 2px;
 }
+.link-hover:hover,
+.link-hover:focus {
+  color: var(--color-dark-blue);
+}
+
 /* ================================/NAVIGATION================================ */
 /* ====================================ADDRESS================================ */
 
@@ -58,8 +78,53 @@
 /* ===============================HERO SECTION================================ */
 
 .hero {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/people-in-office-tablet.jpg);
   padding: 112px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
 }
+@media screen and (min-width: 729px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-in-office.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-in-office-tablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 729px) {
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/people-in-office@2x.jpg);
+    }
+  }
+}
+
 .hero-text {
   font-size: 56px;
   line-height: 1.07;
@@ -67,6 +132,13 @@
   max-width: 496px;
   margin: 0 auto 36px;
 }
+.primary-btn:hover,
+.primary-btn:focus,
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--color-dark-blue);
+}
+
 /* ===============================/HERO SECTION================================ */
 
 /* ================================ODDS SECTION================================ */
@@ -173,13 +245,28 @@
 /* =====================================/FOOTER================================ */
 /* ================================PORTFOLIO PAGE============================== */
 
+.portfolio-section {
+  padding: 64px 0 96px 0;
+}
+.filter-list {
+  margin-bottom: 64px;
+  justify-content: center;
+}
+
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 72px 24px;
 }
 .benefits-list-card {
-  width: 356px;
-  height: 420px;
+  flex-basis: calc((100% - 24px) / 2);
+}
+.benefits-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--color-navy);
 }
 /* ==============================/PORTFOLIO PAGE============================== */
 /* ==============================BURGER MENU================================== */

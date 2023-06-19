@@ -4,6 +4,21 @@
   max-width: 1158px;
   padding: 0 15px;
 }
+.link-hover,
+.customers-link {
+  transition: color var(--animation-slow);
+}
+.primary-btn:hover,
+.primary-btn:focus,
+.team-social-link:hover,
+.team-social-link:focus,
+.footer-submit-btn:hover,
+.footer-submit-btn:focus,
+.modal-secondary-btn:hover,
+.modal-secondary-btn:focus {
+  background-color: var(--color-dark-blue);
+}
+
 /* ===============================/COMMON STYLES============================== */
 /* =====================================HEADER================================ */
 
@@ -64,12 +79,38 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.link-hover:hover,
+.link-hover:focus {
+  color: var(--color-dark-blue);
+}
+
 /* =====================================/HEADER================================ */
 
 /* ===============================HERO SECTION================================ */
 .hero {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/people-in-office.jpg);
   padding: 188px 0;
   max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-in-office@2x.jpg);
+  }
 }
 
 .hero-text {
@@ -79,6 +120,13 @@
   max-width: 496px;
   margin: 0 auto 48px;
 }
+.primary-btn:hover,
+.primary-btn:focus,
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--color-dark-blue);
+}
+
 /* ===============================/HERO SECTION================================ */
 /* ===============================/HERO SECTION================================ */
 
@@ -196,6 +244,17 @@
   width: 408px;
 }
 /* =====================================/FOOTER================================ */
+/* ================================PORTFOLIO PAGE============================== */
+.portfolio-section {
+  padding: 100px 0 120px 0;
+}
+.filter-list {
+  margin-bottom: 72px;
+  justify-content: center;
+}
+
+/* ==============================/PORTFOLIO PAGE============================== */
+
 /* ==============================BURGER MENU================================== */
 .menu-container {
   display: none;

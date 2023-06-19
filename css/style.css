@@ -127,10 +127,6 @@ address {
   text-transform: uppercase;
   color: var(--color-light-blue);
 }
-.link-hover:hover,
-.link-hover:focus {
-  color: var(--color-dark-blue);
-}
 
 .logo-header {
   color: var(--color-navy);
@@ -148,15 +144,6 @@ address {
 
 /* =====================================MAIN================================== */
 /* ===============================HERO SECTION================================ */
-
-.hero {
-  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-in-office.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: 0 auto;
-}
 .hero-text {
   color: var(--color-white);
   text-align: center;
@@ -174,12 +161,6 @@ address {
   min-height: 56px;
   transition: background-color var(--animation-slow);
 }
-.primary-btn:hover,
-.primary-btn:focus,
-.team-social-link:hover,
-.team-social-link:focus {
-  background-color: var(--color-dark-blue);
-}
 /* ============================/HERO SECTION================================ */
 /* =============================ODDS SECTION================================ */
 
@@ -190,12 +171,7 @@ address {
 }
 .main-text {
   color: var(--color-grey);
-  font-family: "Roboto";
-  font-style: normal;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--color-grey);
 }
 /* =========================/ODDS SECTION================================ */
 /* ==========================FEATURES SECTION================================ */
@@ -319,8 +295,8 @@ address {
   transition: background-color var(--animation-slow);
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
+.footer .footer-social-link:hover,
+.footer .footer-social-link:focus {
   background-color: var(--color-mint);
 }
 .footer-icon {
@@ -367,14 +343,9 @@ address {
 /* =====================================/FOOTER================================ */
 
 /* ================================PORTFOLIO PAGE============================== */
-.portfolio-section {
-  padding: 96px 0 120px 0;
-}
 .filter-list {
   display: flex;
-  justify-content: center;
   gap: 24px;
-  margin-bottom: 72px;
 }
 .filter-btn {
   font-family: inherit;
@@ -413,9 +384,8 @@ address {
 }
 .benefits-link:hover,
 .benefits-link:focus {
-  box-shadow: 0px 1px 6px var(--color-shadow-light-dark),
-    0px 1px 1px var(-color-shadow-lighter-dark),
-    0px 2px 1px var(--color-shadow-light-dark);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .benefits-overlay {
   position: relative;
