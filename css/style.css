@@ -67,21 +67,6 @@ address {
   overflow: hidden;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1158px;
-  padding: 0 15px;
-}
-.page-header {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  text-transform: capitalize;
-  color: var(--color-navy);
-  margin-bottom: 72px;
-}
 .primary-btn,
 .filter.btn,
 .social-text-footer,
@@ -93,7 +78,6 @@ address {
 }
 
 .main-text,
-.contact,
 .footer,
 .overlay-text {
   font-size: 16px;
@@ -120,16 +104,10 @@ address {
 /* =====================================HEADER================================ */
 .header {
   border-bottom: 1px solid var(--color-white-grey);
-  max-width: 1440px;
   margin: 0 auto;
   box-shadow: 0px 2px 1px var(--color-shadow-light-dark),
     0px 1px 1px var(-color-shadow-lighter-dark),
     0px 1px 6px var(--color-shadow-light-dark);
-}
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 /* =================================NAVIGATION================================ */
 
@@ -157,48 +135,14 @@ address {
 .logo-header {
   color: var(--color-navy);
 }
-.nav-list {
-  display: flex;
-  gap: 40px;
-}
 .list {
   list-style: none;
   font-weight: 500;
 }
 
-.nav {
-  display: block;
-  color: var(--color-navy);
-  padding: 24px 0;
-}
-.underline {
-  position: relative;
-  color: var(--color-dark-blue);
-}
-.underline::after {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: -1px;
-  width: 100%;
-  height: 4px;
-  background-color: var(--color-dark-blue);
-  border-radius: 2px;
-}
 /* ================================/NAVIGATION================================ */
 /* ====================================ADDRESS================================ */
 
-.address-list {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-.contact {
-  font-style: normal;
-  color: var(--color-grey);
-  display: block;
-  padding: 24px 0;
-}
 /* ===================================/ADDRESS================================ */
 /* ====================================/HEADER================================ */
 
@@ -211,27 +155,17 @@ address {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 188px 0;
-  max-width: 1440px;
   margin: 0 auto;
 }
 .hero-text {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
   color: var(--color-white);
-
   text-align: center;
-  max-width: 496px;
-  margin: 0 auto 48px;
 }
 .primary-btn {
   color: var(--color-white);
   background-color: var(--color-light-blue);
   font-family: inherit;
 
-  padding: 16px 32px;
   border-radius: 4px;
   border: none;
   display: block;
@@ -246,77 +180,37 @@ address {
 .team-social-link:focus {
   background-color: var(--color-dark-blue);
 }
-/* ===============================/HERO SECTION================================ */
-/* ==========================ODDS SECTION================================ */
+/* ============================/HERO SECTION================================ */
+/* =============================ODDS SECTION================================ */
 
-.odds {
-  padding: 120px 0;
-}
-.odds-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
-}
-.odds-list-item {
-  flex-basis: calc((100% - 72px) / 4);
-}
-.odds-list-icon-bg {
-  height: 112px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--color-ghost-white);
-  border-radius: 4px;
-  margin-bottom: 8px;
-}
 .main-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-navy);
   margin-bottom: 8px;
 }
 .main-text {
   color: var(--color-grey);
-  font-weight: 400;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 /* =========================/ODDS SECTION================================ */
 /* ==========================FEATURES SECTION================================ */
 
-.features {
-  padding-bottom: 120px;
-}
-.features-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
-}
-.feat-list-item {
-  flex-basis: calc((100% - 48px) / 3);
-}
 /* ==========================/FEATURES SECTION================================ */
 /* ===============================TEAM SECTION================================ */
 
 .team {
   background-color: var(--color-ghost-white);
-  padding: 120px 0;
-}
-.team-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
 }
 .team-list-card {
-  box-shadow: 0px 1px 6px var(--color-shadow-light-dark),
-    0px 1px 1px var(-color-shadow-lighter-dark),
-    0px 2px 1px var(--color-shadow-light-dark);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--color-white);
-  flex-basis: calc((100% - 72px) / 4);
 }
 .team-card-content {
   text-align: center;
@@ -361,14 +255,6 @@ address {
 /* ===============================/TEAM SECTION================================ */
 
 /* ===============================CUSTOMERS SECTION============================ */
-.customers {
-  padding: 120px 0;
-}
-.customers-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
 .customers-links {
   height: 88px;
   flex-basis: calc((100% - 120px) / 6);
@@ -376,10 +262,6 @@ address {
 .customers-link {
   border: 1px solid var(--color-light-grey);
   border-radius: 4px;
-
-  width: 100%;
-  height: 100%;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -404,16 +286,10 @@ address {
 .footer {
   color: var(--color-ghost-white);
   background-color: var(--color-navy);
-  padding: 100px 0;
-}
-.footer-container {
-  display: flex;
-  align-items: baseline;
 }
 .footer-signature {
-  max-width: 264px;
+  width: 264px;
   max-height: 112px;
-  margin-right: 120px;
 }
 .footer-logo-link {
   display: block;
@@ -429,7 +305,7 @@ address {
   color: var(--color-ghost-white);
 }
 .footer-text {
-  max-width: 264px;
+  width: 264px;
 }
 .social-media-footer {
   max-width: 208px;
@@ -451,12 +327,6 @@ address {
   fill: var(--color-ghost-white);
 }
 
-.footer-form {
-  width: 453px;
-  display: flex;
-  align-items: flex-end;
-  gap: 24px;
-}
 .footer-label-text {
   font-style: normal;
   font-weight: 500;
@@ -464,7 +334,6 @@ address {
   margin-bottom: 16px;
 }
 .footer-email-input {
-  width: 264px;
   height: 40px;
   padding-left: 16px;
   font-size: 12px;
@@ -494,9 +363,6 @@ address {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--color-white);
-}
-.footer-send-icon {
-  margin-left: 16px;
 }
 /* =====================================/FOOTER================================ */
 
@@ -603,7 +469,6 @@ address {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   padding: 72px 24px 24px;
-  width: 408px;
   min-height: 584px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -778,3 +643,11 @@ address {
   transition: background-color var(--animation-slow);
 }
 /* ==============================/BACKDROP PAGE============================== */
+/* ==============================BURGER MENU================================== */
+.burger-menu {
+  display: none;
+}
+.menu-toggle {
+  display: none;
+}
+/* ==============================/BURGER MENU================================== */

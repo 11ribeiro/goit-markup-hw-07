@@ -1,0 +1,189 @@
+/* ================================COMMON STYLES============================== */
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+/* ===============================/COMMON STYLES============================== */
+/* =====================================HEADER================================ */
+
+.header-container {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+/* =================================NAVIGATION================================ */
+
+.nav {
+  color: var(--color-navy);
+  padding: 24px 0;
+}
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+.underline {
+  position: relative;
+  color: var(--color-dark-blue);
+}
+.underline::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -9px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-dark-blue);
+  border-radius: 2px;
+}
+/* ================================/NAVIGATION================================ */
+/* ====================================ADDRESS================================ */
+
+.address-list-link:first-child {
+  margin-bottom: 12px;
+}
+.contact {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  color: var(--color-grey);
+}
+/* ===================================/ADDRESS================================ */
+
+/* ====================================/HEADER================================ */
+
+/* ===============================HERO SECTION================================ */
+
+.hero {
+  padding: 112px 0;
+}
+.hero-text {
+  font-size: 56px;
+  line-height: 1.07;
+
+  max-width: 496px;
+  margin: 0 auto 36px;
+}
+/* ===============================/HERO SECTION================================ */
+
+/* ================================ODDS SECTION================================ */
+
+.odds {
+  padding: 96px 0;
+}
+.odds-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 24px;
+}
+.odds-list-item {
+  flex-basis: calc((100% - 24px) / 2);
+}
+.odds-list-icon-bg {
+  display: none;
+}
+/* =========================/ODDS SECTION================================ */
+/* ==========================FEATURES SECTION================================ */
+
+.features {
+  display: none;
+}
+/* ==========================/FEATURES SECTION================================ */
+
+/* ===============================TEAM SECTION================================ */
+
+.main-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+}
+
+.team {
+  padding: 96px 0;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 64px;
+  column-gap: 24px;
+  justify-content: center;
+}
+
+.page-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--color-navy);
+  margin-bottom: 72px;
+}
+/* ===============================/TEAM SECTION================================ */
+/* ===============================CUSTOMERS SECTION============================ */
+
+.customers {
+  padding: 96px 0;
+}
+
+.customers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 72px;
+  column-gap: 24px;
+}
+.customers-link {
+  width: 168px;
+  height: 88px;
+}
+/* ==============================/CUSTOMERS SECTION============================ */
+/* ======================================FOOTER================================ */
+
+.footer {
+  padding: 96px 0;
+}
+.footer-container {
+  padding: 0 108px;
+}
+.footer-wrapper-left {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+.footer-signature {
+  width: 264px;
+}
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+.footer-email-input {
+  width: 264px;
+  opacity: 0.3;
+}
+.footer-send-icon {
+  margin-left: 16px;
+}
+/* =====================================/FOOTER================================ */
+/* ================================PORTFOLIO PAGE============================== */
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.benefits-list-card {
+  width: 356px;
+  height: 420px;
+}
+/* ==============================/PORTFOLIO PAGE============================== */
+/* ==============================BURGER MENU================================== */
+.menu-container {
+  display: none;
+}
+/* ==============================/BURGER MENU================================== */

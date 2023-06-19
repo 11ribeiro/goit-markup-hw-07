@@ -1,0 +1,324 @@
+/* ================================COMMON STYLES============================== */
+.container {
+  max-width: 428px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+/* ===============================/COMMON STYLES============================== */
+
+/* =====================================HEADER================================ */
+
+/* =================================NAVIGATION================================ */
+.navigation {
+  justify-content: space-between;
+  padding: 24px 0;
+}
+.nav-list {
+  display: none;
+}
+.burger-menu-btn {
+  background-color: transparent;
+  border: none;
+}
+/* ================================/NAVIGATION================================ */
+
+/* ====================================ADDRESS================================ */
+.address-list {
+  display: none;
+}
+/* ===================================/ADDRESS================================ */
+/* ====================================/HEADER================================ */
+
+/* ===============================HERO SECTION================================ */
+.hero-container {
+  padding: 112px 0;
+}
+
+.hero-text {
+  font-size: 36px;
+  line-height: 1.11;
+
+  max-width: 320px;
+  margin: 0 auto 72px;
+}
+/* ===============================/HERO SECTION================================ */
+
+/* ================================ODDS SECTION================================ */
+
+.odds {
+  padding: 96px 0;
+}
+.odds-list {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.odds-list-icon-bg {
+  display: none;
+}
+.main-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+}
+.main-text {
+  font-weight: 500;
+}
+/* =========================/ODDS SECTION================================ */
+/* ==========================FEATURES SECTION================================ */
+.features {
+  display: none;
+}
+/* ==========================/FEATURES SECTION================================ */
+/* ===============================TEAM SECTION================================ */
+.team {
+  padding: 96px 0;
+}
+.team-header {
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+.team-list-card {
+  margin: 0 auto;
+  width: 264px;
+}
+/* ===============================/TEAM SECTION================================ */
+/* ===============================CUSTOMERS SECTION============================ */
+.customers {
+  padding: 96px 0;
+}
+.customers-header {
+  margin-bottom: 72px;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.customers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 72px;
+  max-width: 428px;
+  margin: 0 auto;
+}
+.customers-list:nth-child(1n) {
+  column-gap: 16px;
+}
+.customers-link {
+  width: 190px;
+  height: 88px;
+}
+
+/* ==============================/CUSTOMERS SECTION============================ */
+/* ======================================FOOTER================================ */
+
+.footer {
+  padding: 96px 0;
+}
+.footer-signature {
+  margin: 0 auto 72px;
+}
+.footer-logo-link {
+  text-align: center;
+}
+.social-text-footer {
+  text-align: center;
+}
+.social-media-footer {
+  margin: 0 auto 72px;
+}
+
+.footer-form {
+  margin: 0 auto;
+}
+.footer-label-text {
+  text-align: center;
+}
+.footer-email-input {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 428px;
+  opacity: 0.6;
+  margin-bottom: 16px;
+}
+.footer-submit-btn {
+  margin: 0 auto;
+}
+.footer-send-icon {
+  margin-left: 16px;
+}
+
+/* =====================================/FOOTER================================ */
+/* ==============================BACKDROP PAGE============================== */
+
+.modal-window {
+  width: 392px;
+}
+/* ==============================/BACKDROP PAGE============================== */
+/* ==============================BURGER MENU=================================== */
+
+.burger-menu {
+  display: none;
+}
+
+.menu-toggle {
+  min-height: 32px;
+  min-width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 80px 35px 40px 40px;
+  background: #ffffff;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.menu-toggle-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.mobile-menu-list-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.mobile-menu-list {
+  margin-bottom: auto;
+}
+
+.nav {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+
+  transition: color var(--animation-slow);
+}
+.nav:hover,
+.nav:focus {
+  color: #404bbf;
+}
+
+.mobile-contact-links {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.mobile-contact-links:hover,
+.mobile-contact-links:focus {
+  color: #4d5ae5;
+}
+.mobile-contact {
+  margin-bottom: 48px;
+}
+.mobile-menu-contact-item:first-child {
+  margin-bottom: 40px;
+}
+.team-social-list.burger-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 29px;
+}
+.team-social-link {
+  border-radius: 50%;
+  background: var(--color-light-blue);
+  width: 40px;
+  height: 40px;
+  transition: background-color var(--animation-slow);
+}
+.team-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-social-icon {
+  fill: var(--color-ghost-white);
+}
+/* ==============================BURGER MENU=================================== */
