@@ -84,20 +84,6 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.link-hover,
-.customers-link {
-  transition: color var(--animation-slow);
-}
-.primary-btn:hover,
-.primary-btn:focus,
-.team-social-link:hover,
-.team-social-link:focus,
-.footer-submit-btn:hover,
-.footer-submit-btn:focus,
-.modal-secondary-btn:hover,
-.modal-secondary-btn:focus {
-  background-color: var(--color-dark-blue);
-}
 
 /* ===============================/COMMON STYLES============================== */
 
@@ -450,6 +436,16 @@ address {
 .backdrop.is-hidden .modal-window {
   transform: translate(-50%, 100%);
 }
+@media screen and (max-width: 427.9px) {
+  .modal-window {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 428px) {
+  .modal-window {
+    min-width: 408px;
+  }
+}
 
 .modal-btn {
   position: absolute;
@@ -591,6 +587,13 @@ address {
 
   font-size: 12px;
 }
+@media screen and (max-width: 389px) {
+  .input-link {
+    display: block;
+    text-align: center;
+  }
+}
+
 .modal-secondary-btn {
   display: block;
   margin: 0 auto;

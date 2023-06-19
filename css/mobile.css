@@ -167,14 +167,10 @@
 .customers-header {
   margin-bottom: 72px;
   text-align: center;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
   font-size: 36px;
-  line-height: 40px;
-  text-align: center;
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--color-navy);
 }
 .customers-list {
   display: flex;
@@ -249,9 +245,6 @@
 
 /* ==============================BACKDROP PAGE============================== */
 
-.modal-window {
-  width: 392px;
-}
 /* ==============================/BACKDROP PAGE============================== */
 /* ==============================BURGER MENU=================================== */
 
@@ -345,14 +338,11 @@
 }
 
 .nav {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--color-navy);
 
   transition: color var(--animation-slow);
 }
@@ -361,8 +351,6 @@
 }
 
 .mobile-contact-links {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -377,7 +365,6 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  letter-spacing: 0.02em;
   color: var(--color-light-blue);
 }
 @media screen and (max-width: 427.9px) {
